@@ -246,112 +246,126 @@ const DataApi=[
       "price": 14.99, 
       "rating": 4.7 
     },
-    { "id": 36,
-      "category": "books", 
-      "name": "The Catcher in the Rye", 
-      "image": "https://example.com/images/books6.jpg", 
-      "price": 9.49, 
-      "rating": 4.2 
-    },
-    { "id": 37,
-      "category": "books", 
-      "name": "Harry Potter and the Sorcerer's Stone", 
-      "image": "https://example.com/images/books7.jpg", 
-      "price": 12.99, 
-      "rating": 4.9 
-    },
-    { "id": 38,
-      "category": "books", 
-      "name": "Pride and Prejudice", 
-      "image": "https://example.com/images/books8.jpg", 
-      "price": 8.49, 
-      "rating": 4.6 
-    },
-    { "id": 39,
-      "category": "books", 
-      "name": "Meditations by Marcus Aurelius", 
-      "image": "https://example.com/images/books9.jpg", 
-      "price": 6.99, 
-      "rating": 4.8 
-    },
-    { "id": 40,
-      "category": "books", 
-      "name": "Atomic Habits", 
-      "image": "https://example.com/images/books10.jpg", 
-      "price": 11.99, 
-      "rating": 4.7 
-    },
-
-    { "id": 41,
-      "category": "fitness", 
-      "name": "Yoga Mat", 
-      "image": "https://example.com/images/fitness1.jpg", 
-      "price": 19.99, 
-      "rating": 4.8 
-    },
-    { "id": 42,
-      "category": "fitness", 
-      "name": "Dumbbell Set (10-50 lbs)", 
-      "image": "https://example.com/images/fitness2.jpg", 
-      "price": 79.99, 
-      "rating": 4.7 
-    },
-    { "id": 43,
-      "category": "fitness", 
-      "name": "Resistance Bands", 
-      "image": "https://example.com/images/fitness3.jpg", 
-      "price": 14.99, 
-      "rating": 4.5 
-    },
-    { "id": 44,
-      "category": "fitness", 
-      "name": "Adjustable Kettlebell", 
-      "image": "https://example.com/images/fitness4.jpg", 
-      "price": 49.99, 
-      "rating": 4.6 
-    },
-    { "id": 45,
-      "category": "fitness", 
-      "name": "Fitness Tracker Watch", 
-      "image": "https://example.com/images/fitness5.jpg", 
-      "price": 59.99, 
-      "rating": 4.7 
-    },
-    { "id": 46,
-      "category": "fitness", 
-      "name": "Jump Rope", 
-      "image": "https://example.com/images/fitness6.jpg", 
-      "price": 9.99, 
-      "rating": 4.3 
-    },
-    { "id": 47,
-      "category": "fitness", 
-      "name": "Foam Roller", 
-      "image": "https://example.com/images/fitness7.jpg", 
-      "price": 24.99, 
-      "rating": 4.6 
-    },
-    { "id": 48,
-      "category": "fitness", 
-      "name": "Pull-up Bar", 
-      "image": "https://example.com/images/fitness8.jpg", 
-      "price": 39.99, 
-      "rating": 4.5 
-    },
-    { "id": 49,
-      "category": "fitness", 
-      "name": "Exercise Ball", 
-      "image": "https://example.com/images/fitness9.jpg", 
-      "price": 29.99, 
-      "rating": 4.4 
-    },
-    { "id": 50,
-      "category": "fitness", 
-      "name": "Cycling Gloves", 
-      "image": "https://example.com/images/fitness10.jpg", 
-      "price": 14.99, 
-      "rating": 4.2 
-    }
+   {
+  "id": 36,
+  "category": "books",
+  "name": "The Catcher in the Rye",
+  "image": "https://upload.wikimedia.org/wikipedia/en/3/32/Rye_catcher.jpg",
+  "price": 9.49,
+  "rating": 4.2
+},
+{
+  "id": 37,
+  "category": "books",
+  "name": "Harry Potter and the Sorcerer's Stone",
+  "image": "https://m.media-amazon.com/images/I/81YOuOGFCJL.jpg",
+  "price": 12.99,
+  "rating": 4.9
+},
+{
+  "id": 38,
+  "category": "books",
+  "name": "Pride and Prejudice",
+  "image": "https://m.media-amazon.com/images/I/91HHqVTAJQL.jpg",
+  "price": 8.49,
+  "rating": 4.6
+},
+{
+  "id": 39,
+  "category": "books",
+  "name": "Meditations by Marcus Aurelius",
+  "image": "https://m.media-amazon.com/images/I/81l3rZK4lnL.jpg",
+  "price": 6.99,
+  "rating": 4.8
+},
+{
+  "id": 40,
+  "category": "books",
+  "name": "Atomic Habits",
+  "image": "https://m.media-amazon.com/images/I/91bYsX41DVL.jpg",
+  "price": 11.99,
+  "rating": 4.7
+},
+{
+  "id": 41,
+  "category": "fitness",
+  "name": "Yoga Mat",
+  "image": "https://m.media-amazon.com/images/I/71oT0m1N5yL._AC_SL1500_.jpg",
+  "price": 19.99,
+  "rating": 4.8
+},
+{
+  "id": 42,
+  "category": "fitness",
+  "name": "Dumbbell Set (10-50 lbs)",
+  "image": "https://m.media-amazon.com/images/I/71pZK0J7uDL._AC_SL1500_.jpg",
+  "price": 79.99,
+  "rating": 4.7
+},
+{
+  "id": 43,
+  "category": "fitness",
+  "name": "Resistance Bands",
+  "image": "https://m.media-amazon.com/images/I/71n1xgQfGmL._AC_SL1500_.jpg",
+  "price": 14.99,
+  "rating": 4.5
+},
+{
+  "id": 44,
+  "category": "fitness",
+  "name": "Adjustable Kettlebell",
+  "image": "https://m.media-amazon.com/images/I/71z0VYwQ2yL._AC_SL1500_.jpg",
+  "price": 49.99,
+  "rating": 4.6
+},
+{
+  "id": 45,
+  "category": "fitness",
+  "name": "Fitness Tracker Watch",
+  "image": "https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_SL1500_.jpg",
+  "price": 59.99,
+  "rating": 4.7
+},
+{
+  "id": 46,
+  "category": "fitness",
+  "name": "Jump Rope",
+  "image": "https://m.media-amazon.com/images/I/71nVtZ+4n-L._AC_SL1500_.jpg",
+  "price": 9.99,
+  "rating": 4.3
+},
+{
+  "id": 47,
+  "category": "fitness",
+  "name": "Foam Roller",
+  "image": "https://m.media-amazon.com/images/I/71y6VvZ1PCL._AC_SL1500_.jpg",
+  "price": 24.99,
+  "rating": 4.6
+},
+{
+  "id": 48,
+  "category": "fitness",
+  "name": "Pull-up Bar",
+  "image": "https://m.media-amazon.com/images/I/71v3ZpQn2yL._AC_SL1500_.jpg",
+  "price": 39.99,
+  "rating": 4.5
+},
+{
+  "id": 49,
+  "category": "fitness",
+  "name": "Exercise Ball",
+  "image": "https://m.media-amazon.com/images/I/71nVZbZy2-L._AC_SL1500_.jpg",
+  "price": 29.99,
+  "rating": 4.4
+},
+{
+  "id": 50,
+  "category": "fitness",
+  "name": "Cycling Gloves",
+  "image": "https://m.media-amazon.com/images/I/71hZpQn2yL._AC_SL1500_.jpg",
+  "price": 14.99,
+  "rating": 4.2
+}
   
 
 

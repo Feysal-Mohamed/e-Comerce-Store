@@ -1,5 +1,7 @@
 const DataApi=[
- { "id": 1,
+  
+  
+ {   "id": 1,
       "category": "electronics", 
       "name": "Portable Charger", 
       "image": "https://images.pexels.com/photos/3921703/pexels-photo-3921703.jpeg", 

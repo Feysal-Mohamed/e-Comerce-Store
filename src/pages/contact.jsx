@@ -5,6 +5,7 @@ function Contact() {
     email: "",
     message: "",
   });
+  console.log()
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -82,7 +83,7 @@ function Contact() {
 
           <button
             type="submit"
-            className="w-full bg-primaryColor text-white py-3 px-6 rounded-lg hover:bg-seconColor transition duration-300 font-semibold"
+            className="w-full bg-black text-white py-3 px-6 rounded-lg hover:bg-orange-700 transition duration-300 font-semibold"
           >
             Send Message
           </button>

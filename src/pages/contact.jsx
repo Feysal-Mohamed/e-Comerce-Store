@@ -82,7 +82,7 @@ function Contact() {
 
           <button
             type="submit"
-            className="w-full bg-primaryColor text-white py-3 px-6 rounded-lg hover:bg-seconColor transition duration-300 font-semibold"
+            className="w-full bg-black text-white py-3 px-6 rounded-lg hover:bg-seconColor transition duration-300 font-semibold"
           >
             Send Message
           </button>
@@ -108,7 +108,7 @@ function Contact() {
           {/* Map */}
           <div className="rounded-lg overflow-hidden shadow">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!..."
+              src="https://www.google.com/maps/@2.0408241,45.3463415,15z?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D"
               width="100%"
               height="250"
               allowFullScreen=""

@@ -146,7 +146,7 @@ const DataApi=[
     { "id": 21,
       "category": "home", 
       "name": "Air Fryer", 
-      "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/da083d3e-ed73-4726-a8fa-77f163946605/dkbmnvn-a858482a-3927-4795-adfc-01b2917b330a.png/v1/fill/w_1280,h_960/toxic_yuri__d_by_bubblybutterflies_dkbmnvn-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTYwIiwicGF0aCI6IlwvZlwvZGEwODNkM2UtZWQ3My00NzI2LWE4ZmEtNzdmMTYzOTQ2NjA1XC9ka2JtbnZuLWE4NTg0ODJhLTM5MjctNDc5NS1hZGZjLTAxYjI5MTdiMzMwYS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.xdKCB4rPfG8LzC7Isr-F1VUtdSbs5gQNlHr_3OF91eA", 
+      "image": "https://facts.net/wp-content/uploads/2024/02/6-best-air-fryer-1707206575.jpg",
       "price": 89.99, 
       "rating": 4.5 
     },

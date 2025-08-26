@@ -5,6 +5,7 @@ import About from "./pages/about"
 import Menue from "./pages/menue"
 import Orders from "./pages/orders"
 import Contact from "./pages/contact"
+import Footer from "./components/footer"
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/Orders" element={<Orders />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
+        <Footer />
     </>
   )
 }

@@ -6,7 +6,7 @@ function Head() {
 
   return (
     <div className="flex justify-between px-10 text-3xl font-semibold py-4">
-      <h1>Logo</h1>
+      <h1 className="text-3xl font-bold text-shadow-lg ">3T Shop</h1>
 
       <ul className="flex gap-6 items-center">
         {/* NavLink automatically applies active class when the route matches */}

@@ -5,6 +5,7 @@ import {
   removeFromCart,
   clearCart
 } from "../assets/redux/reducer/orderList" ; // adjust the path
+import { NavLink } from "react-router-dom";
 
 function Orders() {
   const dispatch = useDispatch();
@@ -26,7 +27,9 @@ function Orders() {
         >
           Clear All
         </button>
-      )}
+      )}{
+        items2.length >=1 ?
+ 
 
       <div className="flex justify-between pr-10  px-5">
         <h1 className="text-2xl font-semibold">Product</h1>
@@ -36,7 +39,14 @@ function Orders() {
         <h1 className="text-2xl font-semibold">Total price</h1>
         <h1 className="text-2xl font-semibold text-red-700">Delete</h1>
       </div>
+      :
+      <div className="flex flex-col justify-center items-center">
+        <h1 className="text-3xl font-semibold text-center">you dont have any product</h1>
+        <NavLink to="/menue"><button className="bg-blue-500 rounded-lg  px-4 py-2 text-white mt-5 ">Go To Menue</button></NavLink>
+      </div> 
+        
 
+      }
       {items2.map((item, index) => (
         <div key={`${item.name}-${index}`} className="flex items-center gap-6 mb-6 p-5 bg-white shadow rounded-lg">
           <img className="h-40 w-40 object-cover rounded" src={item.image} alt={item.name} />

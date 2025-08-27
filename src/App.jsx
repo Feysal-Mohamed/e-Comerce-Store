@@ -20,6 +20,7 @@ function App() {
           <Route path="/Orders" element={<Orders />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
+        <hr className="mt-5" />
         <Footer />
     </>
   )

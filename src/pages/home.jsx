@@ -1,55 +1,93 @@
-import { NavLink } from "react-router-dom"
-import { motion } from "framer-motion"
-import Menue from "./menue"
+import { NavLink } from "react-router-dom";
+import Menue from "./menue";
 
-function Home(){
-    return(
+function Home() {
+    return (
         <>
-            <div className=" flex justify-between px-20">
-                <motion.div
-                    className="w-[600px] mt-28" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 2, ease: "easeInOut" }}>
-                    <h1 className="text-4xl font-bold">Welcome</h1>
-                    <p className="text-xl text-gray-600 mt-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam esse cum dolorem quasi unde harum perspiciatis molestias explicabo excepturi numquam? Maxime ad et odio exercitationem nobis dolorum illum iusto ex.</p>
-                </motion.div>
+            {/* Hero Section */}
+            <div className="flex flex-col lg:flex-row justify-between px-6 md:px-10 lg:px-20 py-10 items-center gap-10">
+                {/* Text Content */}
+                <div className="w-full lg:w-1/2 mt-10 lg:mt-28">
+                    <h1 className="text-3xl md:text-4xl font-bold">Welcome</h1>
+                    <p className="text-lg md:text-xl text-gray-600 mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam esse cum dolorem quasi unde harum perspiciatis molestias explicabo excepturi numquam? Maxime ad et odio exercitationem nobis dolorum illum iusto ex.
+                    </p>
+                </div>
 
-                {/* image */}
-                <motion.div initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 2, ease: "easeInOut" }}>
-                <img className="w-[700px]"src="https://themewagon.github.io/furni/images/couch.png"alt=""/>
-                </motion.div>
+                {/* Image */}
+                <div className="w-full lg:w-1/2 flex justify-center">
+                    <img
+                        className="w-full max-w-md md:max-w-lg lg:max-w-xl"
+                        src="https://themewagon.github.io/furni/images/couch.png"
+                        alt="Couch"
+                    />
+                </div>
             </div>
 
-            {/* section2 */}
-                <div className="flex px-20">
-                    {/* texts*/}
-                    <motion.div className="w-[300px] mt-10" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: "easeInOut" }}>
-                        <h1 className="text-2xl font-semibold"> Crafted with excellent material.</h1>
-                        <h1 className="text-gray-700 mt-2 mb-2"> Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</h1>
-                        <NavLink to="/menue">
-                            <motion.button
-                                className="bg-blue-600 px-6 py-2 rounded-lg text-white" initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}> Explore
-                            </motion.button>
-                        </NavLink>
-                    </motion.div>
+            {/* Section 2 */}
+            <div className="flex flex-col lg:flex-row px-6 md:px-10 lg:px-20 py-10 gap-10">
+                {/* Text Content */}
+                <div className="w-full lg:w-1/4">
+                    <h1 className="text-xl md:text-2xl font-semibold">
+                        Crafted with excellent material.
+                    </h1>
+                    <p className="text-gray-700 mt-2 mb-4">
+                        Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+                    </p>
+                    <NavLink to="/menue">
+                        <button className="bg-blue-600 px-6 py-2 rounded-lg text-white">
+                            Explore
+                        </button>
+                    </NavLink>
+                </div>
 
-                    {/* cards */}
-                    <div className="flex space-x-20 ml-10">
-                        {[1, 2, 3].map((card, i) => (
-                        <motion.div
-                            key={i}
-                            className="group rounded-lg flex flex-col overflow-hidden space-y-3 pb-12 items-center justify-center relative" initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1, ease: "easeInOut", delay: 0.3 + i * 0.2 }} >
+                {/* Product Cards */}
+                <div className="w-full flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-6">
+                    {/* Card 1 */}
+                    <div className="group rounded-lg flex flex-col overflow-hidden shadow-lg pb-12 items-center justify-center relative w-full sm:w-[300px]">
+                        <div className="absolute w-full h-52 group-hover:bg-green-400 bottom-0 -z-50 transition duration-300"></div>
+                        <div className="px-5">
+                            <img
+                                className="w-full rounded-xl"
+                                src="https://images.pexels.com/photos/9130517/pexels-photo-9130517.jpeg"
+                                alt="Wireless Earbuds"
+                            />
+                        </div>
+                        <h1 className="text-2xl font-bold mt-4">Wireless Earbuds</h1>
+                        <h1 className="text-2xl font-bold">$300</h1>
+                    </div>
 
-                            <div className="absolute group-hover:bg-green-400 transition-all duration-1000 w-full h-52 bottom-0 -z-50"></div>
-                            <div className="px-5">
-                                <img className="w-[260px] rounded-xl" src="https://images.pexels.com/photos/9130517/pexels-photo-9130517.jpeg" alt="" />
-                            </div>
-                            <h1 className="text-2xl font-bold">Fadhi</h1>
-                            <h1 className="text-2xl font-bold">$300</h1>
-                        </motion.div>
-                        ))}
+                    {/* Card 2 */}
+                    <div className="group rounded-lg flex flex-col overflow-hidden shadow-lg pb-12 items-center justify-center relative w-full sm:w-[300px]">
+                        <div className="absolute w-full h-52 group-hover:bg-green-400 bottom-0 -z-50 transition duration-300"></div>
+                        <div className="px-5">
+                            <img
+                                className="w-full rounded-xl"
+                                src="https://assets.arpost.co/wp-content/uploads/2018/01/28221042/oculus-go-1-e1516017131531.jpg"
+                                alt="VR Headset"
+                            />
+                        </div>
+                        <h1 className="text-2xl font-bold mt-4">VR Headset</h1>
+                        <h1 className="text-2xl font-bold">$300</h1>
+                    </div>
+
+                    {/* Card 3 */}
+                    <div className="group rounded-lg flex flex-col overflow-hidden shadow-lg pb-12 items-center justify-center relative w-full sm:w-[300px]">
+                        <div className="absolute w-full h-52 group-hover:bg-green-400 bottom-0 -z-50 transition duration-300"></div>
+                        <div className="px-5">
+                            <img
+                                className="w-full rounded-xl"
+                                src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Smart Watch"
+                            />
+                        </div>
+                        <h1 className="text-2xl font-bold mt-4">Smart Watch</h1>
+                        <h1 className="text-2xl font-bold">$300</h1>
                     </div>
                 </div>
+            </div>
         </>
-    )
+    );
 }
 
-export default Home
+export default Home;

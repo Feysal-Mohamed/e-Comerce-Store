@@ -130,7 +130,9 @@ function About() {
       {/* =======================
           Testimonials Section
           ======================= */}
+          <h1 className="text-3xl font-semibold">Team Member & Ideas</h1>
       <div className="flex flex-col items-center w-full">
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
           {activeGroup.group.map((person) => (
             <div

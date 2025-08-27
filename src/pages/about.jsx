@@ -1,9 +1,7 @@
+import { div } from "framer-motion/client";
 import { useEffect, useRef, useState } from "react";
 
 function About() {
-  // =======================
-  // Stats Section
-  // =======================
   const stats = [
     { id: 1, value: 10000, label: "HAPPY CUSTOMERS" },
     { id: 2, value: 100, label: "BRANCHES" },
@@ -57,11 +55,8 @@ function About() {
         }, stepTime);
       });
     }
-  }, []);
+  }, [visible]);
 
-  // =======================
-  // Testimonials Section
-  // =======================
   const filterData = [
     {
       id: 1,
@@ -105,44 +100,49 @@ function About() {
   const activeGroup = filterData.find((g) => g.id === activeId);
 
   return (
-    <div className="flex flex-col items-center p-8 space-y-12">
-      {/* =======================
-          Stats Section
-          ======================= */}
+    <div className="flex flex-col items-center px-4 sm:px-8 py-8 space-y-12">
       <div
-      ref={sectionRef}
-      className="relative bg-cover bg-center w-[100%] mb-10 h-[300px] flex items-center justify-center"
-      style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80')",
-      }}
-    >
-      <div className="absolute inset-0 bg-white/30"></div>
-      <div className="relative z-10 grid grid-cols-4 gap-8 text-center text-black font-bold">
-        {stats.map((stat, index) => (
-          <div key={stat.id}>
-            <h2 className="text-3xl">{counts[index].toLocaleString()}</h2>
-            <p className="text-sm tracking-widest">{stat.label}</p>
-          </div>
-        ))}
-      </div>
+      className="relative h-[200px] flex items-center w-full justify-center bg-center  bg-cover"
+      style={{ backgroundImage: "url('https://themewagon.github.io/cozastore/images/product-05.jpg')" }}// Change path to your image
+>
+      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+      <h1 className="relative z-10 text-white text-5xl font-bold">About</h1>
     </div>
+   
+      <div
+        ref={sectionRef}
+        className="relative bg-cover bg-center w-full mb-10 h-[200px] md:h-[300px] flex items-center justify-center"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80')",
+        }}
+      >
+        <div className="absolute inset-0 bg-white/30"></div>
+        <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center text-black font-bold">
+          {stats.map((stat, index) => (
+            <div key={stat.id}>
+              <h2 className="text-xl sm:text-2xl md:text-3xl">{counts[index].toLocaleString()}</h2>
+              <p className="text-xs sm:text-sm tracking-widest">{stat.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* =======================
           Testimonials Section
           ======================= */}
-          <h1 className="text-3xl font-semibold">Team Member & Ideas</h1>
+      <h1 className="text-2xl sm:text-3xl font-semibold">Team Member & Ideas</h1>
       <div className="flex flex-col items-center w-full">
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl w-full">
           {activeGroup.group.map((person) => (
             <div
               key={person.id}
-              className="p-4 border w-96 h-[200px] rounded-lg shadow-md text-center"
+              className="p-4 border w-full sm:w-80 rounded-lg shadow-md text-center mx-auto"
             >
               <img
                 src={person.image}
                 alt={person.name}
-                className="w-20 h-20 mx-auto rounded-full shadow-md"
+                className="w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-full shadow-md"
               />
               <h3 className="mt-3 font-semibold">{person.name}</h3>
               <p className="text-sm text-gray-500">{person.role}</p>

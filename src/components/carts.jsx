@@ -34,24 +34,26 @@ function Carts({ products }) {
   return (
     <>
       {/* Search + Filter */}
-      <div className="px-2 items-end" >
+      <div className="md:px-20 px-2 md:mt-10 md:flex  w-full md:justify-between items-end" >
 
         <input
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className=" w-full md:w-1/2 border-2 border-black rounded-lg px-4 py-2  text-base"
+          className=" w-full md:w-96 border-2 border-black rounded-lg px-4 py-2  text-base"
           type="text"
           placeholder="Search products..."
-        />
-        <div className="relative items-end - md:w-auto">
+          />
+        <div className="relative text-end items-end - md:w-auto">
           <p
             onClick={handleFilter}
-            className="cursor-pointer text-base font-semibold text-end
+            className="cursor-pointer shadow-md inline-block py-2 px-1 text-2xl font-semibold text-end
             "
           >
             {categors}{" "}
             <i className="fa-solid fa-filter text-orange-600 ml-1"></i>
           </p>
+            
+          </div>
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center gap-4 px-4 md:px-10 lg:px-20 mt-6">
 
@@ -75,7 +77,7 @@ function Carts({ products }) {
               </div>
             ))}
           </div>
-        </div>
+        
       </div>
 
       {/* Product Grid */}

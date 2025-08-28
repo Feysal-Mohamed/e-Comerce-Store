@@ -22,7 +22,7 @@ function Head() {
         to="/About"
         className={({ isActive }) =>
           isActive ? "underline text-orange-600" : "text-black"
-      }
+        }
         onClick={() => setIsOpen(false)}
       >
         About
@@ -67,9 +67,13 @@ function Head() {
 
   return (
     <div className="flex justify-between items-center px-6 py-4 text-3xl font-semibold relative">
-<h1 style={{ textShadow: "2px 2px 2px rgba(0, 0, 0, 0.5)" }} className="text-3xl font-bold">
-  3T Shop
-</h1>
+      <h1
+        className="text-3xl font-bold"
+        style={{ textShadow: "2px 2px 2px rgba(0, 0, 0, 0.5)" }}
+      >
+        <span className="text-blue-600">3</span>
+        <span className="text-orange-500">T</span> Store
+      </h1>
 
       {/* Desktop Menu */}
       <ul className="sm:flex hidden gap-6 items-center">{navLinks}</ul>
@@ -83,7 +87,7 @@ function Head() {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <ul className="absolute top-12  right-9  bg-white shadow-xl flex flex-col gap-4 text-lg p-7 sm:hidden z-50">
+        <ul className="absolute top-12 right-9 bg-white shadow-xl flex flex-col gap-4 text-lg p-7 sm:hidden z-50">
           {navLinks}
         </ul>
       )}

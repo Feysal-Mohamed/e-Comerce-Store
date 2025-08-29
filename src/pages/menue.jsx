@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import DataApi from "../components/apiDAta";
 import Carts from "../components/carts";
+import Add from "../components/addproduct";
 
 function Menue() {
   const [lists, setLists] = useState([]);
@@ -14,6 +15,10 @@ function Menue() {
   return (
     <>
       <Carts products={lists} />
+      <hr className="text-black border-2 border-black my-5" />
+       <div>
+          <Add />
+      </div>
     </>
   );
 }

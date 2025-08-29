@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import Menue from "./menue";
+import imgFadhi from "../images/couch.png";
 
 function Home() {
     return (
@@ -18,7 +19,7 @@ function Home() {
                 <div className="w-full lg:w-1/2 flex justify-center">
                     <img
                         className="w-full max-w-md md:max-w-lg lg:max-w-xl"
-                        src="https://themewagon.github.io/furni/images/couch.png"
+                        src={imgFadhi}
                         alt="Couch"
                     />
                 </div>
@@ -86,6 +87,7 @@ function Home() {
                     </div>
                 </div>
             </div>
+           
         </>
     );
 }

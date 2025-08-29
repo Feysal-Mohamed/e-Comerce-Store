@@ -22,6 +22,7 @@ const orderListSlice = createSlice({
         item.quantity += 1;
       }
     },
+
     decreaseQuantity: (state, action) => {
       const item = state.items.find((i) => i.id === action.payload);
       if (item && item.quantity > 1) {
@@ -37,7 +38,13 @@ const orderListSlice = createSlice({
     clearCart: (state) => {
       state.items = [];
     },
-  },
+
+   addproduc: ( action) => {
+    
+  const newProduct = action.payload;
+  
+}
+  }
 });
 
 export const {
@@ -45,7 +52,9 @@ export const {
   increaseQuantity,
   decreaseQuantity,
   removeFromCart,
-  clearCart, // ✅ this must be here!
+  clearCart,
+  addproduc,
+   // ✅ this must be here!
 } = orderListSlice.actions;
 
 export default orderListSlice.reducer;

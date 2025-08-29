@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import Menue from "./menue";
 import imgFadhi from "../images/couch.png";
+import Add from "../components/addproduct";
 
 function Home() {
     return (
@@ -87,7 +88,11 @@ function Home() {
                     </div>
                 </div>
             </div>
-           
+              <hr className="text-black border-2 border-black my-5" />
+
+             <div>
+                <Add />
+             </div>
         </>
     );
 }

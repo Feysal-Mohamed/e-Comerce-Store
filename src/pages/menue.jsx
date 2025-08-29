@@ -15,10 +15,7 @@ function Menue() {
   return (
     <>
       <Carts products={lists} />
-      <hr className="text-black border-2 border-black my-5" />
-       <div>
-          <Add />
-      </div>
+     
     </>
   );
 }
